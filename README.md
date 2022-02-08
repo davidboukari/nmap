@@ -1,4 +1,19 @@
 # nmap
+
+## scan 1-1024
+```
+nmap -PN lapetiteboutiquefrancaise.fr
+Starting Nmap 7.70 ( https://nmap.org ) at 2022-02-08 17:38 CET
+...
+Not shown: 997 filtered ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+
+```
+
+## scan all ports
 ```
 nmap -n -p1-65535 -P0 localhost
 
